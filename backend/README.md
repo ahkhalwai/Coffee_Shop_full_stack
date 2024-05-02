@@ -12,7 +12,7 @@ Follow instructions to install the latest version of python for your platform in
 
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up a virtual environment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-/Users/musef/Udacity/03_coffee_shop_full_stack/starter_code
+Udacity/coffee_shop_full_stack/Coffee_Shop_full_stack/
 
 python3 -m venv venv
 source venv/bin/activate
