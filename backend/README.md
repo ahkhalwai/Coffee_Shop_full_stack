@@ -12,11 +12,6 @@ Follow instructions to install the latest version of python for your platform in
 
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organized. Instructions for setting up a virtual environment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-Udacity/coffee_shop_full_stack/Coffee_Shop_full_stack/
-
-python3 -m venv venv
-source venv/bin/activate
-
 
 #### PIP Dependencies
 
@@ -27,8 +22,6 @@ pip3 install -r requirements.txt
 ```
 
 This will install all of the required packages we selected within the `requirements.txt` file.
-
-pip3 freeze > requirements.txt
 
 ##### Key Dependencies
 
@@ -93,5 +86,3 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
 
 1. `./src/auth/auth.py`
 2. `./src/api.py`
-
-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im53eGtHUjc0Y3Zsc2FUTFNnc2c5NCJ9.eyJpc3MiOiJodHRwczovL2Rldi1haWVoZnVyZWh1aDZzYm1mLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NjJlMDAzMTY3OTk2ODUyMWRhOWMzNGQiLCJhdWQiOiJpbWFnZSIsImlhdCI6MTcxNDM3NTA2MCwiZXhwIjoxNzE0MzgyMjYwLCJzY29wZSI6IiIsImF6cCI6IjFlOTlRaEFOdWs4dzcxMWN1R0x1TDB1cHVPTEp5MW5NIiwicGVybWlzc2lvbnMiOlsiZ2V0OmltYWdlcyIsInBvc3Q6aW1hZ2VzIl19.AFOF8rG-6z5oexBxmsp4ADqNCdK4bMn5skQwJ_ITvxZVlE0-gKlxYmouSwgtEgiJU9RBjglqDKPaJIpEHhpbTBiU7qAf0XS3tuVeM3V5yCSOF2ydt73lmjcfT6eAKKV0QVJMx0doV7ImFw-7xe2qPKqEo0ILTd1Uy8nbNEDvq_8nEaXp4irarVnpRrNdcNcZbOUS2ANyPTrKEsbGZOtUmszjghXWNh4ogTJuV-D15YYmaGRBN8g-DWTGD2TK6p2lhrgEDuktnGIk0ojO1XR7j8JnlLNIScfn9HfbfqZbw2rQrZGpa2R1O7STt7cCTtKvKZjjrRAkmfBDzQ30OBNrXg
