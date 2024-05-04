@@ -18,7 +18,7 @@ CORS(app)
 !! Running this funciton will add one
 '''
 with app.app_context():
-    db_drop_and_create_all()
+    db_drop_and_create_all() # error occur without app.app_context():
 
 # ROUTES
 '''
@@ -72,16 +72,16 @@ def get_drinks_detail(token):
 @app.route('/drinks', methods=['POST'])
 @requires_auth('post:drinks')
 def create_drinks(token):
-    data = request.get_json()
-    new_title = data.get('title')
+    data = request.get_json() # last project method i used here same..
+    new_title = data.get('title') 
     new_recipe = data.get('recipe')
 
     #if not all((new_title, new_recipe)):
     #        abort(422)    
         
-    drinks = Drink(title=new_title,recipe=json.dumps(new_recipe))
+    drinks = Drink(title=new_title,recipe=json.dumps(new_recipe)) 
     drinks.insert()
-    drink = [drinks.long()] # contain the drink.long()
+    drink = [drinks.long()] # contain the drink.long() condition
     return jsonify({
             'success': True,
             "drinks": drink 
@@ -105,7 +105,7 @@ def create_drinks(token):
 @requires_auth('patch:drinks')
 def update_drink(token, id):
     data = request.get_json()
-    update_title = data.get('title')
+    update_title = data.get('title') # here too same as last so make me easy
     update_recipe = data.get('recipe')
     drink = Drink.query.filter(Drink.id == id).one_or_none()
     if drink is None:
