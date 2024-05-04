@@ -7,7 +7,7 @@ from urllib.request import urlopen
 
 AUTH0_DOMAIN = 'dev-aiehfurehuh6sbmf.us.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'image'
+API_AUDIENCE = 'http://localhost:5000'
 
 ## AuthError Exception
 '''
@@ -158,7 +158,7 @@ def verify_decode_jwt(token):
             }, 400)
 
 
-    #raise Exception('Not Implemented')
+    raise Exception('Not Implemented')
 
 '''
 @TODO implement @requires_auth(permission) decorator method
